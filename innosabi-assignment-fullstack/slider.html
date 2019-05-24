@@ -1,35 +1,96 @@
 <!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>innosabi challenge - Slider</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ideal Image Slider Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/ideal-image-slider.css">
+    <link rel="stylesheet" href="css/themes/default/default.css">
+    <style media="screen">
+        #slider {
+            max-width: 900px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
 
-        <link rel="manifest" href="site.webmanifest">
+<div id="slider">
+    <img src="img/img/1.jpg" data-src-2x="img/img/1@2x.jpg" alt="Slide 1" />
+    <img data-src="img/img/2.jpg" data-src-2x="img/img/2@2x.jpg" src="" alt="Slide 2" />
+    <a href="http://example.com"><img data-src="img/img/3.jpg" data-src-2x="img/img/3@2x.jpg" src="" alt="Slide 3" /></a>
+    <img data-src="img/img/4.jpg" data-src-2x="img/img/4@2x.jpg" src="" alt="Slide 4" />
+</div>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-              integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
-              crossorigin="anonymous">
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-
-        <main role="main" class="container">
-        </main>
-
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-                crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
-                integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-                crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+<script src="js/ideal-image-slider.js"></script>
+<script>
+    var slider = new IdealImageSlider.Slider('#slider');
+    slider.start();
+</script>
+</body>
 </html>
+
+<!--<!doctype html>-->
+<!--<html class="no-js" lang="">-->
+    <!--<head>-->
+        <!--<meta charset="utf-8">-->
+        <!--<meta http-equiv="x-ua-compatible" content="ie=edge">-->
+        <!--<title>innosabi challenge - Slider</title>-->
+        <!--<meta name="description" content="">-->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+        <!--<link rel="manifest" href="site.webmanifest">-->
+
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"-->
+              <!--integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"-->
+              <!--crossorigin="anonymous">-->
+
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <!--<link rel="stylesheet" href="css/main.css">-->
+        <!--<link rel="stylesheet" href="css/ideal-image-slider.css">-->
+        <!--<link rel="stylesheet" href="css/themes/default/default.css">-->
+
+    <!--</head>-->
+    <!--<body>-->
+
+        <!--<main role="main" class="container">-->
+        <!--</main>-->
+
+        <!--<script src="js/vendor/modernizr-3.5.0.min.js"></script>-->
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"-->
+                <!--integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="-->
+                <!--crossorigin="anonymous"></script>-->
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"-->
+                <!--integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"-->
+                <!--crossorigin="anonymous"></script>-->
+        <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>-->
+        <!--<script src="js/plugins.js"></script>-->
+        <!--<script src="js/main.js"></script>-->
+    <!--</body>-->
+<!--</html>-->
+
+    <!--&lt;!&ndash;<meta name="viewport" content="width=device-width, initial-scale=1">&ndash;&gt;-->
+    <!--<style media="screen">-->
+        <!--#slider {-->
+            <!--max-width: 900px;-->
+            <!--margin: 50px auto;-->
+        <!--}-->
+    <!--</style>-->
+
+<!--<div id="slider">-->
+    <!--<img src="img/1.jpg" data-src-2x="img/1@2x.jpg" alt="Slide 1" />-->
+    <!--<img data-src="img/2.jpg" data-src-2x="img/2@2x.jpg" src="" alt="Slide 2" />-->
+    <!--<a href="http://example.com"><img data-src="img/3.jpg" data-src-2x="img/3@2x.jpg" src="" alt="Slide 3" /></a>-->
+    <!--<img data-src="img/4.jpg" data-src-2x="img/4@2x.jpg" src="" alt="Slide 4" />-->
+<!--</div>-->
+<!--</head>-->
+<!--<script src="../ideal-image-slider.js"></script>-->
+<!--<script>-->
+    <!--var slider = new IdealImageSlider.Slider('#slider');-->
+    <!--slider.start();-->
+<!--</script>-->
+<!--<body>-->
+
+

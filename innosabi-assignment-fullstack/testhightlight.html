@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="myText">My name ist abc.</p>
+<input id="searchText"><br><button onclick="findIt()">Find</button>
+<script>
+    var entireText = document.getElementById("myText").
+        innerHTML;
+    function findIt(){
+        var searchedText = document.getElementById(
+            "searchText").value;
+        if(entireText.toLocaleLowerCase().indexOf(
+            searchedText.toLowerCase()) > -1) {
+            var tempText = entireText.toLowerCase().replace(
+                searchedText.toLowerCase(), "<span " +
+                "style='background-color:yellow'>" +
+                searchedText.toLowerCase() + "</span>");
+            document.getElementById("myText").innerHTML =
+                    tempText;
+        }
+
+    }
+
+    function highlight(text) {
+        var searchedText = document.getElementById(
+            "searchedText").value;
+        alert(searchedText);
+        var inputText = document.getElementById("inputText");
+        var innerHTML = inputText.innerHTML;
+        var index = innerHTML.indexOf(text);
+        if (index >= 0) {
+            innerHTML = innerHTML.substring(0,index) + "<span class='highlight'>" + innerHTML.substring(index,index+text.length) + "</span>" + innerHTML.substring(index + text.length);
+            inputText.innerHTML = innerHTML;
+        }
+    }
+
+
+
+</script>
+<button onclick="highlight('fox')">Highlight</button>
+
+<div id="inputText">
+    The fox went over the fence
+</div>
+<style>
+
+    .highlight {
+        background-color: yellow;
+    }
+</style>
+</body>
+</html>
